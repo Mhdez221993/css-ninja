@@ -11,20 +11,13 @@ html {
 }
 
 :root {
-  --bg-header: #003;
-  --bg-main: rgb(39, 2, 73);
-  --bg-footer: rgb(24, 2, 44);
-  --border-header: rgb(60, 10, 134);
-  --border-buttons: #7777e7;
-  --offer-btn: #a4ea0e;
-  --offer-btn-border: #729c16;
-  --nav-buttons: #6c6cf7;
-  --border-main: rgb(60, 10, 134);
   --humber: #fff;
   --hover-social-icons: rgb(175, 172, 172);
+  --border-header: rgb(214, 203, 203);
+
 }
 
-body {
+body.background {
   margin: 0;
   padding: 0;
   display: flex;
@@ -32,7 +25,9 @@ body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+  background-color: rgb(0, 0, 0);
 }
+
 
 /* Reset */
 
@@ -49,12 +44,11 @@ a:hover {
 /* Header */
 
 header {
-  background-color: var(--bg-header);
-  border-bottom: 1px solid var(--border-header);
+  border-width: thin;
+  border-bottom: thin solid var(--border-header);
 }
 
 .humburger {
-  color: var(--humber);
   padding: 15px;
 }
 
@@ -63,11 +57,9 @@ header {
 }
 
 .nav-btn {
-  background-color: var(--nav-buttons);
   margin-right: 20px;
   padding: 5px 20px;
   border-radius: 4px;
-  border: 1px solid var(--border-buttons);
 }
 
 .brand {
@@ -81,10 +73,8 @@ header {
   padding: 5px 20px;
   margin-right: 20px;
   border-radius: 4px;
-  border: 1px solid var(--offer-btn-border);
-  font-weight: 700;
-  background-color: var(--offer-btn);
-  color: black;
+  font-weight: 900;
+  color: #073347;
 }
 
 .offer.buy:hover {
@@ -95,15 +85,21 @@ header {
 
 main {
   flex: 1;
-  background-color: var(--bg-main);
-  border-bottom: 1px solid var(--border-main);
+}
+
+.sec-header {
+  padding: 50px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.sec-header > h1 {
+  font-size: 30px;
+  color: #f5f5f5;
 }
 
 /* Footer */
-
-footer {
-  background-color: var(--bg-footer);
-}
 
 .copyright-nav a,
 span {
@@ -123,7 +119,12 @@ span {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-/* @media only screen and (min-width: 600px) {...} */
+@media only screen and (min-width: 600px) {
+  .sec-header {
+    max-width: 800px;
+    margin: 50px auto 20px auto;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -142,6 +143,6 @@ span {
   .footer-brand,
   .copyright-nav,
   .footer-contact {
-    max-width: 1800px;
+    max-width: 1000px;
   }
 }
