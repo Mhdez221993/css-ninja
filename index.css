@@ -11,13 +11,17 @@ html {
 }
 
 :root {
-  --bg-header: rgb(64, 4, 121);
+  --bg-header: #003;
   --bg-main: rgb(39, 2, 73);
   --bg-footer: rgb(24, 2, 44);
-  --border-header: rgb(80, 9, 185);
-  --border-buttons: rgb(12, 3, 26);
+  --border-header: rgb(60, 10, 134);
+  --border-buttons: #7777e7;
   --offer-btn: #a4ea0e;
   --offer-btn-border: #729c16;
+  --nav-buttons: #6c6cf7;
+  --border-main: rgb(60, 10, 134);
+  --humber: #fff;
+  --hover-social-icons: rgb(175, 172, 172);
 }
 
 body {
@@ -39,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: rgb(131, 126, 138) !important;
+  color: rgb(160, 146, 179) !important;
 }
 
 /* Header */
@@ -50,7 +54,7 @@ header {
 }
 
 .humburger {
-  color: white;
+  color: var(--humber);
   padding: 15px;
 }
 
@@ -59,7 +63,7 @@ header {
 }
 
 .nav-btn {
-  background-color: var(--bg-main);
+  background-color: var(--nav-buttons);
   margin-right: 20px;
   padding: 5px 20px;
   border-radius: 4px;
@@ -92,7 +96,7 @@ header {
 main {
   flex: 1;
   background-color: var(--bg-main);
-  border-bottom: 1px solid var(--bg-header);
+  border-bottom: 1px solid var(--border-main);
 }
 
 /* Footer */
@@ -114,8 +118,7 @@ span {
 }
 
 .nav-icons .fa:hover {
-  font-size: 25px;
-  color: var(--bg-header);
+  color: var(--hover-social-icons);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
