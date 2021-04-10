@@ -70,6 +70,7 @@ header {
   font-size: 24px;
   font-weight: 900;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(233, 227, 227);
 }
 
 .offer.buy {
@@ -97,7 +98,6 @@ main {
 /* Footer */
 
 footer {
-  flex: 0 0 250px;
   background-color: var(--bg-footer);
 }
 
@@ -106,6 +106,16 @@ span {
   color: white;
   font-size: 14px;
   opacity: 0.9;
+}
+
+.nav-icons .fa {
+  font-size: 25px;
+  color: white;
+}
+
+.nav-icons .fa:hover {
+  font-size: 25px;
+  color: var(--bg-header);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -126,7 +136,9 @@ span {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .desktop-nav,
-  .copyright-nav {
+  .footer-brand,
+  .copyright-nav,
+  .footer-contact {
     max-width: 1800px;
   }
 }
