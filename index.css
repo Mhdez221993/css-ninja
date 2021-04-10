@@ -1,3 +1,5 @@
+/* General */
+
 html {
   box-sizing: border-box;
 }
@@ -6,4 +8,125 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+:root {
+  --bg-header: rgb(64, 4, 121);
+  --bg-main: rgb(39, 2, 73);
+  --bg-footer: rgb(24, 2, 44);
+  --border-header: rgb(80, 9, 185);
+  --border-buttons: rgb(12, 3, 26);
+  --offer-btn: #a4ea0e;
+  --offer-btn-border: #729c16;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* Reset */
+
+a {
+  text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+a:hover {
+  color: rgb(131, 126, 138) !important;
+}
+
+/* Header */
+
+header {
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border-header);
+}
+
+.humburger {
+  color: white;
+  padding: 15px;
+}
+
+.humburger.fa-bars {
+  font-size: 25px;
+}
+
+.nav-btn {
+  background-color: var(--bg-main);
+  margin-right: 20px;
+  padding: 5px 20px;
+  border-radius: 4px;
+  border: 1px solid var(--border-buttons);
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.offer.buy {
+  padding: 5px 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+  border: 1px solid var(--offer-btn-border);
+  font-weight: 700;
+  background-color: var(--offer-btn);
+  color: black;
+}
+
+.offer.buy:hover {
+  color: rgb(119, 114, 114);
+}
+
+/* Main */
+
+main {
+  flex: 1;
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--bg-header);
+}
+
+/* Footer */
+
+footer {
+  flex: 0 0 250px;
+  background-color: var(--bg-footer);
+}
+
+.copyright-nav a,
+span {
+  color: white;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .desktop-nav a {
+    color: white;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .desktop-nav,
+  .copyright-nav {
+    max-width: 1800px;
+  }
 }
