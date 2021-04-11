@@ -51,6 +51,11 @@ a.nav-btn:hover {
   color: var(--link-hover);
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 /* Header */
 header {
   margin-bottom: 40px;
@@ -89,6 +94,10 @@ a.brand.mobile {
   color: rgb(119, 114, 114);
 }
 
+.fa.fa-user-ninja {
+  color: white;
+}
+
 /* Main */
 
 main {
@@ -122,6 +131,31 @@ main {
   margin-left: auto;
 }
 
+.teacher {
+  width: 100px;
+  height: 100px;
+  /* background-image: url(); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.company {
+  width: 100px;
+  height: 40px;
+  background-color: gray;
+}
+
+.img-teacher {
+  border-radius: 100px;
+}
+
+.teacher-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+}
+
 /* Footer */
 
 .copyright-nav a,
@@ -139,9 +173,20 @@ span {
   color: var(--link-hover);
 }
 
+@media (min-width: 500px) {
+  .teacher-container {
+    grid-template-columns: 180px 180px;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 768px) {
   header {
     margin-bottom: 70px;
+  }
+
+  .teacher-container {
+    grid-template-columns: 190px 190px 190px 190px;
   }
 
   .desktop-nav {
@@ -175,10 +220,5 @@ span {
 
   header {
     margin-bottom: 100px;
-  }
-
-  .main-programs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
