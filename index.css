@@ -15,6 +15,7 @@ html {
   --link-color: rgb(224, 213, 213);
   --link-hover: rgb(160, 146, 179);
   --offer-bg: #0071e3;
+  --body-bg: rgb(0, 0, 0);
 }
 
 body.background {
@@ -25,7 +26,7 @@ body.background {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--general-color);
-  background-color: rgb(0, 0, 0);
+  background-color: var(--body-bg)
 }
 
 .desktop-nav {
@@ -51,6 +52,9 @@ a.nav-btn:hover {
 }
 
 /* Header */
+header {
+  margin-bottom: 40px;
+}
 
 .humburger.fa-bars {
   font-size: 25px;
@@ -88,6 +92,23 @@ main {
   color: var(--general-color);
 }
 
+.programs {
+  background-color: rgb(60, 63, 70);
+  padding: 10px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBD4bqzd-7zZ60znfrV1xPz_eVSiFXfiYYFSIICNhclrAOyUaPZLSWqodXsDbGPOh3xk&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--body-bg);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.fa-css3 {
+  margin-left: auto;
+}
+
 /* Footer */
 
 .copyright-nav a,
@@ -106,6 +127,10 @@ span {
 }
 
 @media (min-width: 768px) {
+  header {
+    margin-bottom: 70px;
+  }
+
   .desktop-nav {
     display: flex;
     align-items: center;
@@ -113,6 +138,19 @@ span {
 
   .mobile-nav {
     display: none;
+  }
+  .p-header {
+    width: 50%;
+  }
+  .main-programs {
+    margin: 0;
+  }
+
+  .main-programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 }
 
@@ -122,5 +160,14 @@ span {
   footer {
     width: 1020px;
     margin: 0 auto;
+  }
+
+  header {
+    margin-bottom: 100px;
+  }
+
+  .main-programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
