@@ -11,10 +11,10 @@ html {
 }
 
 :root {
-  --humber: #fff;
-  --hover-social-icons: rgb(175, 172, 172);
-  --border-header: rgb(214, 203, 203);
-
+  --general-color: #fff;
+  --link-color: rgb(224, 213, 213);
+  --link-hover: rgb(160, 146, 179);
+  --offer-bg: #0071e3;
 }
 
 body.background {
@@ -24,57 +24,47 @@ body.background {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: var(--general-color);
   background-color: rgb(0, 0, 0);
 }
 
+.desktop-nav {
+  display: none;
+}
+
+header,
+main,
+footer {
+  padding: 0 20px;
+}
 
 /* Reset */
 
-a {
-  text-decoration: none !important;
+a.nav-btn {
+  text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  color: var(--link-color);
 }
 
-a:hover {
-  color: rgb(160, 146, 179) !important;
+a.nav-btn:hover {
+  color: var(--link-hover);
 }
 
 /* Header */
 
-header {
-  border-width: thin;
-  border-bottom: thin solid var(--border-header);
-}
-
-.humburger {
-  padding: 15px;
-}
-
 .humburger.fa-bars {
   font-size: 25px;
-}
-
-.nav-btn {
-  margin-right: 20px;
-  padding: 5px 20px;
-  border-radius: 4px;
 }
 
 .brand {
   font-size: 24px;
   font-weight: 900;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: rgb(233, 227, 227);
 }
 
 .offer.buy {
-  padding: 5px 20px;
-  margin-right: 20px;
   border-radius: 4px;
   font-weight: 900;
-  color: #073347;
 }
 
 .offer.buy:hover {
@@ -87,62 +77,50 @@ main {
   flex: 1;
 }
 
-.sec-header {
-  padding: 50px 20px;
-  margin: 10px;
-  border-radius: 5px;
+.header-h1 {
+  font-size: 30px;
   font-weight: bolder;
 }
 
-.sec-header > h1 {
-  font-size: 30px;
-  color: #f5f5f5;
+.sec-header > p {
+  font-size: 15px;
+  font-weight: 100;
+  color: var(--general-color);
 }
 
 /* Footer */
 
 .copyright-nav a,
 span {
-  color: white;
   font-size: 14px;
   opacity: 0.9;
 }
 
 .nav-icons .fa {
   font-size: 25px;
-  color: white;
+  color: var(--general-color);
 }
 
 .nav-icons .fa:hover {
-  color: var(--hover-social-icons);
+  color: var(--link-hover);
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+  }
 
-@media only screen and (min-width: 600px) {
-  .sec-header {
-    max-width: 800px;
-    margin: 50px auto 20px auto;
+  .mobile-nav {
+    display: none;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .desktop-nav a {
-    color: white;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-/* @media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .desktop-nav,
-  .footer-brand,
-  .copyright-nav,
-  .footer-contact {
-    max-width: 1000px;
+@media (min-width: 1000px) {
+  header,
+  main,
+  footer {
+    width: 1020px;
+    margin: 0 auto;
   }
 }
