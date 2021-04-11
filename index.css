@@ -26,7 +26,7 @@ body.background {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--general-color);
-  background-color: var(--body-bg)
+  background-color: var(--body-bg);
 }
 
 .desktop-nav {
@@ -93,7 +93,6 @@ main {
 }
 
 .programs {
-  background-color: rgb(60, 63, 70);
   padding: 10px;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBD4bqzd-7zZ60znfrV1xPz_eVSiFXfiYYFSIICNhclrAOyUaPZLSWqodXsDbGPOh3xk&usqp=CAU);
   background-repeat: no-repeat;
@@ -139,11 +138,9 @@ span {
   .mobile-nav {
     display: none;
   }
+
   .p-header {
     width: 50%;
-  }
-  .main-programs {
-    margin: 0;
   }
 
   .main-programs {
