@@ -1,5 +1,5 @@
-# onlineconforence
-This project is based on an online website for conference. 
+# css ninja
+This project is based on a website development course. 
 It contains the main page, about and tickets page each of 
 these pages have 2 different screen sizes: mobile and desktop.
 
@@ -37,12 +37,13 @@ Give a ⭐️ if you like this project!
 
 ## Credits
 
-The list of third party components used in this project, with due credits to their authors and license terms. More details can be found inside the folder of each asset.
+The list of third party components used in this project, with due credits to their authors and license terms. More details can be found in the next link.
+
+- Cindy Shin in Behance
+- [credits](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 
 ## Acknowledgments
 
-
-- Cindy Shin in Behance
 - Microverse
 - StackOverflow
