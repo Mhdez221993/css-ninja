@@ -68,6 +68,11 @@ footer {
   display: none;
 }
 
+.border-b {
+  border-bottom: 1px solid var(--light-black);
+  width: 100%;
+}
+
 /* Reset */
 
 a.nav-btn {
