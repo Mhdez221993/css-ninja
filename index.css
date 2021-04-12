@@ -15,7 +15,8 @@ html {
   --black: #272a31;
   --link-hover: rgb(160, 146, 179);
   --orange: #ec5242;
-  --body-bg: rgba(0, 0, 0, 0.1);
+  --body-bg: rgba(0, 0, 0);
+  --light-black: #272a31;
 }
 
 @font-face {
@@ -37,6 +38,12 @@ body.background {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--general-color);
   background-color: var(--body-bg);
+}
+
+.loto {
+  font-family: loto, sans-serif;
+  color: var(--light-gray);
+  font-weight: 900;
 }
 
 .orange {
@@ -66,7 +73,7 @@ footer {
 a.nav-btn {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--black);
+  color: var(--light-gray);
 }
 
 a.nav-btn:hover {
@@ -79,7 +86,7 @@ a.nav-btn:hover {
 
 .humburger.fa-bars {
   font-size: 35px;
-  opacity: 0.6;
+  color: var(--light-gray);
 }
 
 .humburger.fa-bars:hover {
@@ -206,26 +213,31 @@ main {
 }
 
 .p-header {
-  border: 5px solid #d3d3d3;
+  border: 5px solid var(--light-black);
   border-radius: 6px;
   padding: 20px;
+  color: var(--light-gray);
 }
 
 .last-sect {
-  background-color: var(--light-gray);
   margin-bottom: 100px;
 }
 
 .like {
   font-family: cocogoose, sans-serif;
+  color: var(--light-gray);
 }
 
 .get-started {
   background-color: var(--orange);
-  color: var(--light-gray);
+  color: var(--light-black);
   text-align: center;
   margin: 0 30px;
   padding: 20px 0;
+}
+
+.get-started > a {
+  color: var(--light-black);
 }
 
 .show-more {
@@ -302,6 +314,10 @@ span {
   [class*='more-'] {
     display: block;
   }
+
+  #humburger-nav {
+    display: none;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -318,6 +334,11 @@ span {
   }
 
   .bg-img {
-    background-color: var(--light-gray);
+    /* background-color: var(--light-black); */
+  }
+
+  .last-sect {
+    /* background-color: var(--light-black); */
+    margin-bottom: 100px;
   }
 }
