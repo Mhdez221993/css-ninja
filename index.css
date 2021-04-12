@@ -57,6 +57,10 @@ footer {
   padding: 0 20px;
 }
 
+[class*='more-'] {
+  display: none;
+}
+
 /* Reset */
 
 a.nav-btn {
@@ -73,18 +77,46 @@ a.nav-btn:hover {
   color: var(--orange);
 }
 
+.humburger.fa-bars {
+  font-size: 35px;
+  opacity: 0.6;
+}
+
+.humburger.fa-bars:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
 img {
   width: 100%;
 }
 
 /* Header */
 
-.mobile-nav {
-  display: flex;
+#humburger-nav {
+  position: absolute;
+  display: none;
+  top: 0;
+  width: 100%;
 }
 
-.humburger.fa-bars {
+#close,
+.fa-times {
+  top: 0;
+  right: 0;
+  color: var(--orange);
   font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.mobile-menu {
+  display: block;
+  padding: 10px 0;
+}
+
+.mobile-nav {
+  display: flex;
 }
 
 .brand {
@@ -188,6 +220,30 @@ main {
   font-family: cocogoose, sans-serif;
 }
 
+.get-started {
+  background-color: var(--orange);
+  color: var(--light-gray);
+  text-align: center;
+  margin: 0 30px;
+  padding: 20px 0;
+}
+
+.show-more {
+  border: 2px solid var(--light-gray);
+  border-radius: 6px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.fa.fa-angle-down {
+  color: var(--orange);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 /* Footer */
 
 .copyright-nav a,
@@ -203,15 +259,6 @@ span {
 
 .nav-icons .fa:hover {
   color: var(--link-hover);
-}
-
-@media (min-width: 500px) {
-  .main-programs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -242,6 +289,18 @@ span {
 
   .teacher-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .get-started {
+    display: none;
+  }
+
+  .show-more {
+    display: none;
+  }
+
+  [class*='more-'] {
+    display: block;
   }
 }
 
