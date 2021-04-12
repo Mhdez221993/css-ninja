@@ -1,5 +1,6 @@
 # css ninja
-This project is based on a website development course. 
+This project is based on a web development course, the idea is mater css 
+by practicing throught building component for mobile and desktop app  
 It contains the main page, about and tickets page each of 
 these pages have 2 different screen sizes: mobile and desktop.
 
