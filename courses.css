@@ -3,11 +3,16 @@ form {
   justify-content: center;
 }
 
-input {
+.main-input {
   width: 100%;
   padding: 12px 0 10px 0;
   border-radius: 25px;
   text-align: center;
+  background-color: var(--light-gray);
+}
+
+.radio-btn {
+  opacity: 0.5;
 }
 
 .mask {
@@ -24,10 +29,11 @@ input {
 
 .table {
   border: 7px solid transparent;
-  border-image: 7 repeating-linear-gradient(45deg, var(--orange) 0, var(--orange) 1em, blue 0, rgb(102, 102, 241) 2em, var(--light-gray) 0, var(--light-gray) 3em);
+  border-image: 7 repeating-linear-gradient(45deg, var(--black) 0, var(--black) 2em, var(--light-white) 0, var(--light-white) 3em);
   color: var(--light-gray);
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+  background-color: var(--black);
 }
 
 .day-2 {
@@ -39,8 +45,8 @@ input {
   font-family: loto, sans-serif;
   font-weight: 600;
   font-size: 15px;
-  border-right: 1px solid var(--light-gray);
-  border-bottom: 1px solid var(--light-gray);
+  border-right: 1px solid var(--border-table);
+  border-bottom: 1px solid var(--border-table);
   padding: 10px 0;
   margin: 0;
 }
@@ -50,8 +56,8 @@ input {
   font-family: loto, sans-serif;
   font-weight: 600;
   font-size: 15px;
-  border-right: 1px solid var(--light-gray);
-  border-bottom: 1px solid var(--light-gray);
+  border-right: 1px solid var(--border-table);
+  border-bottom: 1px solid var(--border-table);
   padding: 10px 0;
   margin: 0;
 }
@@ -60,9 +66,45 @@ input {
   border-bottom: none;
 }
 
+.r-none {
+  border-right: none;
+}
+
+.t2-title {
+  background-color: var(--black);
+  padding: 10px 0;
+}
+
+.table-2 {
+  background-color: rgb(105, 105, 105);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.button-course {
+  background-color: var(--orange);
+  width: 300px;
+  padding: 15px 0;
+  opacity: 0.9;
+  font-family: loto, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.radio-2 {
+  margin: 10px;
+}
+
 @media (min-width: 420px) {
-  input {
+  .main-input {
     width: 400px;
+  }
+
+  .radio-2 {
+    margin: 15px;
   }
 }
 
@@ -76,9 +118,13 @@ input {
     top: 50px;
   }
 
-  input {
+  .main-input {
     width: 50%;
     padding: 12px 0 10px 100px;
     text-align: left;
+  }
+
+  .radio-2 {
+    margin: 30px;
   }
 }

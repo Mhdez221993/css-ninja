@@ -17,6 +17,10 @@ html {
   --orange: #ec5242;
   --body-bg: rgba(0, 0, 0);
   --light-black: #272a31;
+  --light-orange: #d47065;
+  --light-blue: rgb(149, 149, 214);
+  --light-white: rgb(175, 162, 162);
+  --border-table: rgb(70, 69, 69);
 }
 
 @font-face {
