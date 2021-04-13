@@ -180,6 +180,17 @@ main {
   color: var(--general-color);
 }
 
+.main-programs {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.programs-title {
+  color: var(--light-gray);
+  font-family: loto, sans-serif;
+  font-weight: 900;
+}
+
 .programs {
   padding: 10px;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBD4bqzd-7zZ60znfrV1xPz_eVSiFXfiYYFSIICNhclrAOyUaPZLSWqodXsDbGPOh3xk&usqp=CAU);
@@ -188,8 +199,25 @@ main {
   background-position: center;
   background-color: var(--body-bg);
   border-radius: 5px;
-  margin-bottom: 20px;
   opacity: 0.9;
+}
+
+.programs.contact {
+  text-align: center;
+  color: var(--light-gray);
+}
+
+.programs.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  background-image: linear-gradient(to bottom right, var(--orange), var(--orange));
+  opacity: 0.6;
+  border-radius: 5px;
 }
 
 .fa-css3 {
@@ -222,6 +250,23 @@ main {
   border-radius: 6px;
   padding: 20px;
   color: var(--light-gray);
+}
+
+.p-header.description {
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid var(--light-gray);
+}
+
+.p-header.contact {
+  margin: 0 auto;
+  width: 70%;
+  border: 0;
+}
+
+.p-header.description.logo {
+  width: 50%;
+  border: 1px solid var(--light-gray);
 }
 
 .last-sect {
@@ -261,6 +306,10 @@ main {
   font-size: 20px;
 }
 
+.sect-1.contact {
+  text-align: center;
+}
+
 /* Footer */
 
 .copyright-nav a,
@@ -298,10 +347,14 @@ span {
   }
 
   .main-programs {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+  }
+
+  .main-programs.contact {
+    grid-template-columns: 320px 320px;
+    justify-content: center;
   }
 
   .teacher-container {
