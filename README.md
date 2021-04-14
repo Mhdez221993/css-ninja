@@ -4,8 +4,8 @@ by practicing throught building component for mobile and desktop app
 It contains the main page, about and tickets page each of 
 these pages have 2 different screen sizes: mobile and desktop.
 
-![screenshot](./images/mobile-cp.png)
-![screenshot](./images/desk-cp.png)
+![screenshot](./images/mobile-black.png)
+![screenshot](./images/desktop-black.png)
 
 ## Built With
 
