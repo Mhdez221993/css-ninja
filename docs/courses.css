@@ -1,0 +1,147 @@
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.main-input {
+  width: 100%;
+  padding: 12px 0 10px 0;
+  border-radius: 25px;
+  text-align: center;
+  background-color: var(--light-gray);
+}
+
+.radio-btn {
+  opacity: 0.5;
+}
+
+.mask {
+  display: none;
+}
+
+.figure {
+  width: 6px;
+  height: 6px;
+  background-color: var(--orange);
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+.table {
+  border: 7px solid transparent;
+  border-image: 7 repeating-linear-gradient(45deg, var(--black) 0, var(--black) 2em, var(--light-white) 0, var(--light-white) 3em);
+  color: var(--light-gray);
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  background-color: var(--black);
+}
+
+.no-mobile {
+  display: none;
+}
+
+.day-2 {
+  grid-column: 3/5;
+}
+
+.tb-title {
+  color: var(--light-gray);
+  font-family: loto, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  border-right: 1px solid var(--border-table);
+  border-bottom: 1px solid var(--border-table);
+  padding: 10px 0;
+  margin: 0;
+}
+
+.tb-label {
+  color: var(--orange);
+  font-family: loto, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  border-right: 1px solid var(--border-table);
+  border-bottom: 1px solid var(--border-table);
+  padding: 10px 0;
+  margin: 0;
+}
+
+.b-none {
+  border-bottom: none;
+}
+
+.r-none {
+  border-right: none;
+}
+
+.t2-title {
+  background-color: var(--black);
+  padding: 10px 0;
+}
+
+.table-2 {
+  background-color: rgb(105, 105, 105);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.button-course {
+  background-color: var(--orange);
+  min-width: 100px;
+  width: 200px;
+  padding: 15px 0;
+  opacity: 0.9;
+  font-family: loto, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.radio-2 {
+  margin: 10px;
+}
+
+@media (min-width: 420px) {
+  .main-input {
+    width: 400px;
+  }
+
+  .radio-2 {
+    margin: 15px;
+  }
+
+  .table {
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+  }
+
+  .no-mobile {
+    display: block;
+  }
+
+  .button-course {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mask {
+    display: block;
+    width: 50%;
+    padding: 13px 0 10px 20px;
+    text-align: left;
+    color: var(--orange);
+    top: 50px;
+  }
+
+  .main-input {
+    width: 50%;
+    padding: 12px 0 10px 100px;
+    text-align: left;
+  }
+
+  .radio-2 {
+    margin: 30px;
+  }
+}
