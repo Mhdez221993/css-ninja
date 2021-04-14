@@ -15,7 +15,7 @@ these pages have 2 different screen sizes: mobile and desktop.
 
 ## Live Demo
 
-[Visit the Live Demo](https://mhdez221993.github.io/css-ninja/)
+[Visit the Live Demo](https://mhdez221993.github.io/css-ninja/src)
 
 
 ## Getting Started
