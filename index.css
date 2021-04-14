@@ -159,7 +159,7 @@ header {
 .brand {
   font-size: 14px;
   font-weight: 400;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Verdana, sans-serif;
   padding: 5px 15px;
   border: 1px solid rgb(65, 63, 63);
   margin-bottom: 10px;
@@ -447,12 +447,7 @@ span {
     padding: 0;
   }
 
-  .bg-img {
-    /* background-color: var(--light-black); */
-  }
-
   .last-sect {
-    /* background-color: var(--light-black); */
     margin-bottom: 100px;
   }
 }
