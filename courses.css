@@ -32,8 +32,12 @@ form {
   border-image: 7 repeating-linear-gradient(45deg, var(--black) 0, var(--black) 2em, var(--light-white) 0, var(--light-white) 3em);
   color: var(--light-gray);
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr;
   background-color: var(--black);
+}
+
+.no-mobile {
+  display: none;
 }
 
 .day-2 {
@@ -86,7 +90,8 @@ form {
 
 .button-course {
   background-color: var(--orange);
-  width: 300px;
+  min-width: 100px;
+  width: 200px;
   padding: 15px 0;
   opacity: 0.9;
   font-family: loto, sans-serif;
@@ -105,6 +110,18 @@ form {
 
   .radio-2 {
     margin: 15px;
+  }
+
+  .table {
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+  }
+
+  .no-mobile {
+    display: block;
+  }
+
+  .button-course {
+    width: 400px;
   }
 }
 
