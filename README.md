@@ -17,6 +17,25 @@ these pages have 2 different screen sizes: mobile and desktop.
 
 [Visit the Live Demo](https://mhdez221993.github.io/css-ninja/)
 
+
+## Getting Started
+
+No prerequisites
+
+To get a local copy:
+ 
+- Cloning repository:
+ 1. Press the green button "Code" and copy the link bellow
+ 2. Then open terminal or Git Bash in a folder where you want to copy the repository
+ 3. Type command "git clone" and paste the address that you copied
+ 4. Press "Enter"
+ 5. cd css-ninja
+ 6. type "code ." and press enter or prees "Go live" botton on visual studion code
+- Download zip file:
+ 1. Press the green button "Code" and press "Download ZIP"
+ 2. Save the file and extract it in any folder you wish
+ 3. Find the "index.html" file in extracted file and double click on it
+
 ## Authors
 
 
