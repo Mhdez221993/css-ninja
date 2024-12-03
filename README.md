@@ -1,4 +1,4 @@
-# css ninja
+# CSS Ninja
 
 The goal of CSS Ninja is to explore and implement CSS fundamentals through hands-on experience. This project emphasizes responsive design, layout techniques, and creating visually appealing components tailored to different screen sizes. It consists of multiple pages, each styled for optimal performance on mobile and desktop devices.
 
