@@ -1,121 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
     <script src="https://use.fontawesome.com/f8a3ee0e31.js"></script>
     <script src="./index.js"></script>
-    <link rel="stylesheet" href="./courses.css">
+    <link rel="stylesheet" href="./courses.css" />
     <title>Master Css</title>
-</head>
-<body class="background">
+  </head>
+  <body class="background">
     <header class="py-3">
-        <nav class="desktop-nav">
-            <a class="nav-btn me-auto brand" href="./404.html">CSS NINJA</a>
-            <a class="nav-btn top-nav me-4" href="./index.html">Home</a>
-            <a class="nav-btn top-nav me-4" href="./about.html">About</a>
-            <a class="nav-btn top-nav me-4" href="./courses.html">Courses</a>
-        </nav>
-        <nav class="mobile-nav">
-            <i id="burger" class="fa fa-bars humburger" onclick="displyMobileMenu()"></i>
-        </nav>
-        <div id="humburger-nav" class="position-relative">
-            <a class="mobile-menu nav-btn top-nav" href="./index.html">Home</a>
-            <a class="mobile-menu nav-btn top-nav" href="./about.html">About</a>
-            <a class="mobile-menu nav-btn top-nav" href="./courses.html">Courses</a>
-            <i id="close" class="fa fa-times" onclick="menuBack()"></i>
-        </div>
+      <nav class="desktop-nav">
+        <a class="nav-btn me-auto brand" href="index.html">CSS NINJA</a>
+        <a class="nav-btn top-nav me-4" href="index.html">Home</a>
+        <a class="nav-btn top-nav me-4" href="about.html">About</a>
+        <a class="nav-btn top-nav me-4" href="courses.html">Courses</a>
+      </nav>
+      <nav class="mobile-nav">
+        <i
+          id="burger"
+          class="fa fa-bars humburger"
+          onclick="displyMobileMenu()"
+        ></i>
+      </nav>
+      <div id="humburger-nav" class="position-relative">
+        <a class="mobile-menu nav-btn top-nav" href="index.html">Home</a>
+        <a class="mobile-menu nav-btn top-nav" href="about.html">About</a>
+        <a class="mobile-menu nav-btn top-nav" href="courses.html">Courses</a>
+        <i id="close" class="fa fa-times" onclick="menuBack()"></i>
+      </div>
     </header>
     <main>
-        <div class="bg-img">
-            <section class="py-5 sect-1 contact justify-content-center">
-                <h1>Css Ninja Courses</h1>
-                <form class="py-5 d-flex flex-column align-items-center position-relative">
-                    <label class="mask position-absolute" for="select"><span class="figure"></span> STEP 1</label>
-                    <input class="mb-5 main-input" id="select" type="text" placeholder="Please select the day when you want to join">
-                    <div class="table">
-                        <h3 class="tb-title">Courses</h3>
-                        <h3 class="tb-title">Advanced Layouts</h3>
-                        <h3 class="tb-title day-2 no-mobile">Grid and Flex box</h3>
-                        <h3 class="tb-title r-none">Sass Fundamentals</h3>
-                        <h3 class="tb-title">Date</h3>
-                        <h3 class="tb-title">15.Oct(Thu)</h3>
-                        <h3 class="tb-title no-mobile">16.Oct(Fri)</h3>
-                        <h3 class="tb-title no-mobile">15-16.Oct(Thu-Fri)</h3>
-                        <h3 class="tb-title no-mobile r-none">15-16.Oct(Thu-Fri)</h3>
-                        <h3 class="tb-title">Normal</h3>
-                        <label class="tb-label no-mobile">$70,000 <input class="d-block mx-auto mt-2 radio-btn" type="radio" name="course" value="one"></label>
-                        <label class="tb-label no-mobile">$70,000 <input class="d-block mx-auto mt-2 radio-btn" type="radio" name="course" value="two"></label>
-                        <label class="tb-label no-mobile"> $100,000 <input class="d-block mx-auto mt-2 radio-btn" type="radio" name="course" value="three"></label>
-                        <label class="tb-label r-none no-mobile">$100 <input class="d-block mx-auto mt-2 radio-btn" type="radio" name="course" value="four"></label>
-                        <h3 class="tb-title b-none">Advanced</h3>
-                        <label class="tb-label b-none">$70,000 <input class="d-block mx-auto mt-2 radio-btn" type="radio" name="course" value="five"></label>
-                        <label class="tb-label b-none">$70,000 <input class="d-block mx-auto mt-2 radio-btn" type="radio" name="course" value="six"></label>
-                        <label class="tb-label b-none no-mobile">$100,000 <input class="d-block mx-auto mt-2 radio-btn" type="radio" name="course" value="seven"></label>
-                        <label class="tb-label b-none no-mobile r-none">$100 <input class="d-block mx-auto mt-2 radio-btn" type="radio" name="course" value="nine"></label>
-                    </div>
-                </form>
-            </section>
-        </div>
-        <div class="bg-img">
-            <section class="py-5 sect-1 contact justify-content-center">
-                <h3>Select Your Level Of Experience</h3>
-                <form class="py-5 d-flex flex-column align-items-center position-relative">
-                    <label class="mask position-absolute" for="select-2"><span class="figure"></span> STEP 2</label>
-                    <input class="mb-5 main-input" id="select-2" type="text" placeholder="Please select the course">
-                    <div class="mb-5">
-                        <div class="t2-title">First Time</div>
-                        <div class="table-2">
-                            <label class="radio-2">menu-1<input class="ms-2 radio-btn" type="radio" name="course" value="five"></label>
-                            <label class="radio-2">menu-1<input class="ms-2 radio-btn" type="radio" name="course" value="six"></label>
-                            <label class="radio-2">menu-2 <input class="ms-2 radio-btn" type="radio" name="course" value="seven"></label>
-                            <label class="radio-2">manu-3<input class="ms-2 radio-btn" type="radio" name="course" value="nine"></label>
-                            <label class="radio-2">manu-4<input class="ms-2 radio-btn" type="radio" name="course" value="nine"></label>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="t2-title">Advanced</div>
-                        <div class="table-2">
-                            <label class="radio-2">menu-1<input class="ms-2 radio-btn" type="radio" name="course" value="five"></label>
-                            <label class="radio-2">menu-1<input class="ms-2 radio-btn" type="radio" name="course" value="six"></label>
-                            <label class="radio-2">menu-2 <input class="ms-2 radio-btn" type="radio" name="course" value="seven"></label>
-                            <label class="radio-2">manu-3<input class="ms-2 radio-btn" type="radio" name="course" value="nine"></label>
-                            <label class="radio-2">manu-4<input class="ms-2 radio-btn" type="radio" name="course" value="nine"></label>
-                        </div>
-                    </div>
-                </form>
-                <button class="button-course" type="submit">Subcribe</button>
-            </section>
-        </div>
-
-       
+      <div class="bg-img">
+        <section class="py-5 sect-1 contact justify-content-center">
+          <h1>Css Ninja Courses</h1>
+          <form
+            class="py-5 d-flex flex-column align-items-center position-relative"
+          >
+            <label class="mask position-absolute" for="select"
+              ><span class="figure"></span> STEP 1</label
+            >
+            <input
+              class="mb-5 main-input"
+              id="select"
+              type="text"
+              placeholder="Please select the day when you want to join"
+            />
+            <div class="table">
+              <h3 class="tb-title">Courses</h3>
+              <h3 class="tb-title">Advanced Layouts</h3>
+              <h3 class="tb-title day-2 no-mobile">Grid and Flex box</h3>
+              <h3 class="tb-title r-none">Sass Fundamentals</h3>
+              <h3 class="tb-title">Date</h3>
+              <h3 class="tb-title">15.Oct(Thu)</h3>
+              <h3 class="tb-title no-mobile">16.Oct(Fri)</h3>
+              <h3 class="tb-title no-mobile">15-16.Oct(Thu-Fri)</h3>
+              <h3 class="tb-title no-mobile r-none">15-16.Oct(Thu-Fri)</h3>
+              <h3 class="tb-title">Normal</h3>
+              <label class="tb-label no-mobile"
+                >$70,000
+                <input
+                  class="d-block mx-auto mt-2 radio-btn"
+                  type="radio"
+                  name="course"
+                  value="one"
+              /></label>
+              <label class="tb-label no-mobile"
+                >$70,000
+                <input
+                  class="d-block mx-auto mt-2 radio-btn"
+                  type="radio"
+                  name="course"
+                  value="two"
+              /></label>
+              <label class="tb-label no-mobile">
+                $100,000
+                <input
+                  class="d-block mx-auto mt-2 radio-btn"
+                  type="radio"
+                  name="course"
+                  value="three"
+              /></label>
+              <label class="tb-label r-none no-mobile"
+                >$100
+                <input
+                  class="d-block mx-auto mt-2 radio-btn"
+                  type="radio"
+                  name="course"
+                  value="four"
+              /></label>
+              <h3 class="tb-title b-none">Advanced</h3>
+              <label class="tb-label b-none"
+                >$70,000
+                <input
+                  class="d-block mx-auto mt-2 radio-btn"
+                  type="radio"
+                  name="course"
+                  value="five"
+              /></label>
+              <label class="tb-label b-none"
+                >$70,000
+                <input
+                  class="d-block mx-auto mt-2 radio-btn"
+                  type="radio"
+                  name="course"
+                  value="six"
+              /></label>
+              <label class="tb-label b-none no-mobile"
+                >$100,000
+                <input
+                  class="d-block mx-auto mt-2 radio-btn"
+                  type="radio"
+                  name="course"
+                  value="seven"
+              /></label>
+              <label class="tb-label b-none no-mobile r-none"
+                >$100
+                <input
+                  class="d-block mx-auto mt-2 radio-btn"
+                  type="radio"
+                  name="course"
+                  value="nine"
+              /></label>
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="bg-img">
+        <section class="py-5 sect-1 contact justify-content-center">
+          <h3>Select Your Level Of Experience</h3>
+          <form
+            class="py-5 d-flex flex-column align-items-center position-relative"
+          >
+            <label class="mask position-absolute" for="select-2"
+              ><span class="figure"></span> STEP 2</label
+            >
+            <input
+              class="mb-5 main-input"
+              id="select-2"
+              type="text"
+              placeholder="Please select the course"
+            />
+            <div class="mb-5">
+              <div class="t2-title">First Time</div>
+              <div class="table-2">
+                <label class="radio-2"
+                  >menu-1<input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="five"
+                /></label>
+                <label class="radio-2"
+                  >menu-1<input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="six"
+                /></label>
+                <label class="radio-2"
+                  >menu-2
+                  <input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="seven"
+                /></label>
+                <label class="radio-2"
+                  >manu-3<input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="nine"
+                /></label>
+                <label class="radio-2"
+                  >manu-4<input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="nine"
+                /></label>
+              </div>
+            </div>
+            <div>
+              <div class="t2-title">Advanced</div>
+              <div class="table-2">
+                <label class="radio-2"
+                  >menu-1<input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="five"
+                /></label>
+                <label class="radio-2"
+                  >menu-1<input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="six"
+                /></label>
+                <label class="radio-2"
+                  >menu-2
+                  <input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="seven"
+                /></label>
+                <label class="radio-2"
+                  >manu-3<input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="nine"
+                /></label>
+                <label class="radio-2"
+                  >manu-4<input
+                    class="ms-2 radio-btn"
+                    type="radio"
+                    name="course"
+                    value="nine"
+                /></label>
+              </div>
+            </div>
+          </form>
+          <button class="button-course" type="submit">Subcribe</button>
+        </section>
+      </div>
     </main>
 
     <footer class="py-2">
-        <a class="nav-btn me-auto brand" href="./index.html">CSS NINJA</a>
-        <nav class="footer-contact d-flex justify-content-md-center">
-            <a class="nav-btn me-3" href="#contact"><span class="fs-5">Contact</span></a>
-            <a class="nav-btn" href="#contact"><span class="fs-5">About</span></a>
-        </nav>
-        <nav class="nav-icons d-flex flex-wrap py-4 justify-content-md-center">
-            <a class="nav-btn me-4" href="https://www.facebook.com/moises.hernandezcoronado" rel="noopener noreferrer" target="_blank"><i class="fa fa-facebook-square"></i></a>
-            <a class="nav-btn me-4" href="https://twitter.com/MoisesH42060050" rel="noopener noreferrer" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a class="nav-btn me-4" href="https://www.linkedin.com/in/moises-hernandez-9bbb17145/" rel="noopener noreferrer" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a class="nav-btn me-4" href="https://github.com/Mhdez221993" rel="noopener noreferrer" target="_blank"><i class="fa fa-github"></i></a>
-            <a class="nav-btn" href="https://app.slack.com/client/T47CT8XPG/learning-slack" rel="noopener noreferrer" target="_blank"><i class="fa fa-slack"></i></a>
-        </nav>
-        <nav class="copyright-nav d-flex flex-wrap py-2">
-            <span class="me-auto nav-btn loto">© cssninja 2021 Allright Reserved</span>
-            <a class="me-5 a-end nav-btn top-nav" href="#">Terms and Conditions</a>
-            <a class="nav-btn top-nav" href="#">Privacy & Policy</a>
-        </nav>
-        
+      <a class="nav-btn me-auto brand" href="index.html">CSS NINJA</a>
+      <nav class="footer-contact d-flex justify-content-md-center">
+        <a class="nav-btn me-3" href="#contact"
+          ><span class="fs-5">Contact</span></a
+        >
+        <a class="nav-btn" href="#contact"><span class="fs-5">About</span></a>
+      </nav>
+      <nav class="nav-icons d-flex flex-wrap py-4 justify-content-md-center">
+        <a
+          class="nav-btn me-4"
+          href="https://www.facebook.com/moises.hernandezcoronado"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa fa-facebook-square"></i
+        ></a>
+        <a
+          class="nav-btn me-4"
+          href="https://twitter.com/MoisesH42060050"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a
+          class="nav-btn me-4"
+          href="https://www.linkedin.com/in/moises-hdez-coronado/"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a
+          class="nav-btn me-4"
+          href="https://github.com/Mhdez221993"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a
+          class="nav-btn"
+          href="https://app.slack.com/client/T47CT8XPG/learning-slack"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa fa-slack"></i
+        ></a>
+      </nav>
+      <nav class="copyright-nav d-flex flex-wrap py-2">
+        <span class="me-auto nav-btn loto"
+          >© cssninja 2021 Allright Reserved</span
+        >
+        <a class="me-5 a-end nav-btn top-nav" href="#">Terms and Conditions</a>
+        <a class="nav-btn top-nav" href="#">Privacy & Policy</a>
+      </nav>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
