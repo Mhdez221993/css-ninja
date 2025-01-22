@@ -12,12 +12,14 @@
     "test": "echo 'No tests defined'"
   },
   "devDependencies": {
-    "hint": "6.0.x",
+    "@hint/hint-axe": "^4.4.21",
+    "@hint/hint-performance-budget": "^2.4.27",
+    "hint": "^7.0.0",
+    "live-server": "^1.2.1",
     "stylelint": "13.3.x",
     "stylelint-config-standard": "20.0.x",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "3.17.x",
-    "live-server": "^1.2.1"
+    "stylelint-scss": "3.17.x"
   },
   "author": "Moises Hernandez",
   "license": "MIT"
