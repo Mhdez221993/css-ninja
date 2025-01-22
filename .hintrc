@@ -1,17 +1,30 @@
 {
-    "connector": {
-      "name": "local",
-      "options": {
-        "pattern": ["**", "!.git/**", "!node_modules/**"]
-      }
-    },
-    "extends": ["development"],
-    "formatters": ["stylish"],
-    "hints": [
-      "button-type",
-      "disown-opener",
-      "html-checker",
-      "meta-charset-utf-8",
-      "meta-viewport"
-    ]
-  }
+  "connector": {
+    "name": "local",
+    "options": {
+      "pattern": ["**", "!.git/**", "!node_modules/**"]
+    }
+  },
+  "extends": ["development"],
+  "formatters": ["stylish"],
+  "hints": [
+    "button-type",
+    "disown-opener",
+    "html-checker",
+    "meta-charset-utf-8",
+    "meta-viewport",
+    "axe", // Accessibility checks
+    "content-type",
+    "highest-available-document-mode",
+    "no-bom",
+    "no-disallowed-headers",
+    "no-friendly-error-pages",
+    "no-html-only-headers",
+    "no-http-redirects",
+    "no-protocol-relative-urls",
+    "no-vulnerable-javascript-libraries",
+    "performance-budget",
+    "strict-transport-security",
+    "validate-set-cookie-header"
+  ]
+}
