@@ -27,7 +27,7 @@ To get a local copy:
 - `git clone git@github.com:Mhdez221993/css-ninja.git`
 - `cd css-ninja`
 
-## Authors
+## Author
 
 
 👤 **Moises Hernandez**
