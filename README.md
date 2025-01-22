@@ -9,8 +9,7 @@ The goal of CSS Ninja is to explore and implement CSS fundamentals through hands
 - Explore typography, spacing, and color schemes to enhance UI/UX.
 - Practice creating modular and reusable CSS components.
 
-![screenshot](./images/cssNinjaMobile.png)
-![screenshot](./images/cssNinjadesktop.png)
+![screenshot](./images/screen-shoot.png)
 
 ## Built With
 
