@@ -1,9 +1,24 @@
 {
+  "name": "css-ninja",
+  "version": "1.0.0",
+  "description": "A project to explore and implement CSS fundamentals.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "lint:css": "stylelint '**/*.{css,scss}'",
+    "lint:html": "hint .",
+    "lint": "npm run lint:css && npm run lint:html",
+    "build": "echo 'No build step defined'",
+    "test": "echo 'No tests defined'"
+  },
   "devDependencies": {
     "hint": "6.0.x",
     "stylelint": "13.3.x",
     "stylelint-config-standard": "20.0.x",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "3.17.x"
-  }
+    "stylelint-scss": "3.17.x",
+    "live-server": "^1.2.1"
+  },
+  "author": "Moises Hernandez",
+  "license": "MIT"
 }
